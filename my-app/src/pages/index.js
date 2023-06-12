@@ -243,7 +243,7 @@ export default function Home() {
       );
     }
     // If connected user is not the owner but presale hasn't started yet, tell them that
-    if (!presaleStarted) {
+    if (presaleStarted) {
       return (
         <div>
           <div className={styles.description}>Presale hasn&#39;t started!</div>
